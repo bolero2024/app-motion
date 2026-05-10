@@ -1,0 +1,73 @@
+// mockData.js — carousel card content
+export const CARDS = [
+  {
+    id: 1,
+    emoji: "👟",
+    title: "Find a deal on these shoes",
+    description: "Compare prices across stores",
+    bg: "#fde8d0",
+  },
+  {
+    id: 2,
+    emoji: "📖",
+    title: "Explain this article",
+    description: "Get a clear summary",
+    bg: "#e8f0fd",
+  },
+  {
+    id: 3,
+    emoji: "🏠",
+    title: "Compare these apartments",
+    description: "Pros & cons side by side",
+    bg: "#fde8e8",
+  },
+  {
+    id: 4,
+    emoji: "💡",
+    title: "Learn something new",
+    description: "Discover a topic in depth",
+    bg: "#e8fde8",
+  },
+  {
+    id: 5,
+    emoji: "📊",
+    title: "Summarize this report",
+    description: "Key insights at a glance",
+    bg: "#f0e8fd",
+  },
+  {
+    id: 6,
+    emoji: "✈️",
+    title: "Plan my next trip",
+    description: "Itineraries & travel tips",
+    bg: "#e8fdfd",
+  },
+  {
+    id: 7,
+    emoji: "🎨",
+    title: "Design inspiration",
+    description: "Creative ideas & references",
+    bg: "#fde8f5",
+  },
+  {
+    id: 8,
+    emoji: "💬",
+    title: "Improve my writing",
+    description: "Refine tone & clarity",
+    bg: "#fdfde8",
+  },
+  {
+    id: 9,
+    emoji: "🔬",
+    title: "Explain this science",
+    description: "Complex topics simplified",
+    bg: "#e8f8fd",
+  },
+  {
+    id: 10,
+    emoji: "📸",
+    title: "Describe this photo",
+    description: "What's in the image?",
+    bg: "#fdf0e8",
+  },
+];

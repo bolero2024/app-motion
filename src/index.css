@@ -1,3 +1,72 @@
+@import "tailwindcss";
+
+@keyframes mcp-highlight-gradient-shift {
+  0%   { background-position: 0 50%; }
+  to   { background-position: 100% 50%; }
+}
+
+
+.gradient-border {
+  margin-top: 48px;
+  pointer-events: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(75, 182, 195, 0.85),
+    rgba(88, 188, 195, 0.8) 12%,
+    rgba(200, 210, 148, 0.88) 28%,
+    rgba(215, 108, 112, 0.9) 44%,
+    rgba(220, 104, 108, 0.95) 50%,
+    rgba(215, 108, 112, 0.9) 56%,
+    rgba(200, 210, 148, 0.88) 72%,
+    rgba(88, 188, 195, 0.8) 88%,
+    rgba(75, 182, 195, 0.85)
+  );
+  background-size: 300% 100%;
+  padding: 6px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 24px rgba(75, 182, 195, 0.25);
+  animation: mcp-highlight-gradient-shift 4s ease-in-out infinite alternate;
+  
+}
+.gradient-border-dark {
+  margin-top: 48px;
+  pointer-events: auto;
+  background: linear-gradient(
+    120deg,
+ rgba(75, 182, 195, 0.55),
+    rgba(88, 188, 195, 0.5) 12%,
+    rgba(231, 241, 177, 0.58) 28%,
+    rgba(235, 182, 182, 0.6) 44%,
+    rgba(211, 175, 177, 0.65) 50%,
+    rgba(218, 169, 171, 0.6) 56%,
+    rgba(211, 219, 171, 0.58) 72%,
+    rgba(88, 188, 195, 0.5) 88%,
+    rgba(75, 182, 195, 0.55)
+  );
+  background-size: 300% 100%;
+  padding: 6px;
+  border-radius: 9999px;
+  box-shadow: 0 12px 24px rgba(1, 36, 41, 0.25);
+  animation: mcp-highlight-gradient-shift 4s ease-in-out infinite alternate;
+  
+}
+
+.logo{
+  position: relative;
+      
+}
+.logo::after {
+  background-color: rgba(2, 7, 19, 0.86);
+    content: "";
+     
+    display: block;
+    height: 1.5em;
+    margin:  0 0 0 2em ;
+    /* margin-right: 3em; */
+    width: 1px;
+
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -24,6 +93,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -51,7 +121,7 @@
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
